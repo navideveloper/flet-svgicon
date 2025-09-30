@@ -12,6 +12,8 @@ Easily change **stroke color**, **fill color**, **size**, and **stroke width** o
 - 🖥️ Works across platforms (desktop, web, mobile)
 
 ---
+## 📸 Preview
+![SVGIcon demo](assets/screenshot.png)
 
 ## Clone the repo and Test:
 ```bash
@@ -19,6 +21,3 @@ git clone https://github.com/navideveloper/flet-svgicon.git
 cd flet-svgicon
 python example.py
 ```
-## 📸 Preview
-![SVGIcon demo](assets/screenshot.png)
-```"# flet-svgicon" 
