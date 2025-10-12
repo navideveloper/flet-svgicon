@@ -1,9 +1,5 @@
 import base64
-import re
-
-def get_svg(svg_path: str) -> str:
-    with open(svg_path, "r", encoding="utf-8") as f:
-        return f.read()
+import re,os
 
 def color_svg(svg_text: str, fill_color: str = None, stroke_color: str = None, stroke_width: str = None) -> str:
     if fill_color:

@@ -3,12 +3,12 @@ from . import functions
 
 class SVGIcon(flet.Container):
     def __init__(self,
-                    icon_path:str,size:int=1,stroke_width:int=2,
-                    fill_color:str='#000000',stroke_color:str='#ffffff'
+            svg_script:str,size:int=1,stroke_width:int=2,
+            fill_color:str='#000000',stroke_color:str='#ffffff'
         ):
         super().__init__()
         self.size = size
-        self.icon_path = icon_path
+        self.svg_script = svg_script
         self.fill_color = fill_color
         self.stroke_width = stroke_width
         self.stroke_color = stroke_color
@@ -21,7 +21,7 @@ class SVGIcon(flet.Container):
     def update_icon(self):
         content = functions.svg_to_base64(
             functions.color_svg(
-                functions.get_svg(self.icon_path),
+                self.svg_script,
                 self.fill_color,self.stroke_color,str(self.stroke_width),
             )
         )
